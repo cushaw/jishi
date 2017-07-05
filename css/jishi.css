@@ -37,6 +37,25 @@ html,body{
 }
 .done{
     margin-top: 10px;
+    padding-bottom:10px;
+    border-bottom:1px solid #ccc;
+}
+.done > span:nth-child(1){
+	color:greenyellow;
+}
+.done > span:nth-child(2){
+	color:cornflowerblue;
+}
+.list{
+	width:100%;
+	padding:10px;
+	border-bottom:1px solid royalblue;
+	position:relative;
+}
+.list > button{
+	position:absolute;
+	right:10px;
+	top:5px;
 }
 input{
     border:none;
@@ -47,6 +66,8 @@ input:focus{
     outline: none;
 }
 .remove{
+	background:indianred;
+	color:#fff;
     opacity: 0;
     transition: opacity .5s ease;
 }
@@ -60,9 +81,15 @@ input:focus{
     bottom: 10px;cursor: pointer;
 }
 .header{
-    height:50px;border-bottom: 1px solid #000;display: flex;
+    height:50px;
+    border-bottom: 1px solid royalblue;
+    display: flex;
     justify-content: space-between;
 
+}
+.header > h3{
+	color:royalblue;
+	font-weight: normal;
 }
 .header .addcon{
     line-height: 50px;
